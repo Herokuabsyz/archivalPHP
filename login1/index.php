@@ -22,9 +22,6 @@ require_once ('soapclient/SforcePartnerClient.php');
 $mySforceConnection = new SforcePartnerClient();
 $mySforceConnection->createConnection("PartnerWSDL.xml");
 $mySforceConnection->login(USERNAME, PASSWORD.SECURITY_TOKEN);
-echo "The time is " . date("h:i:sa");
-echo "date".date('d')."&nbsp;&nbsp;month".date('m')."&nbsp;&nbsp;today".date('Ymd')."&nbsp;&nbsp;day".date('l');
-echo "<br>Hour".date('g')."&nbsp;&nbsp;Minutes".date('i')."&nbsp;&nbsp;Seconds".date('s');
 
 if($mySforceConnection !=NULL)
 {
