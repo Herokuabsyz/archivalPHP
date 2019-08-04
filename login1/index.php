@@ -1,6 +1,14 @@
 <html>
 <body>
+<form action="index.php" method="post">
+<input type="submit" name="submit" value="submit" />
+</form>
 <?php
+	if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['submit']))
+    {
+        disprecords();
+    }
+	function disprecords(){
 define("USERNAME", "manishbattu@dev.com");
 define("PASSWORD", "manomani@2169");
 define("SECURITY_TOKEN", "oqwAHteZvrpluSMW2LsRiDps");
@@ -52,6 +60,7 @@ echo $attachment->fields->Title.'&nbsp;&nbsp;&nbsp;'.$attachment->Id.'</br></br>
 }
 }
 }
+	}
 ?>
 </body>
 </html>
