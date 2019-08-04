@@ -44,7 +44,7 @@ echo '<tr>
 <td>'.$record->Id.'</td>&nbsp;&nbsp;&nbsp;
 <td>'.$record->fields->FirstName.'</td>&nbsp;&nbsp;&nbsp;
 <td>'.$record->fields->LastName.'</td>&nbsp;&nbsp;&nbsp;
-<td>'.$record->fields->Phone No.'</td>&nbsp;&nbsp;&nbsp;
+<td>'.$record->fields->Phone.'</td>&nbsp;&nbsp;&nbsp;
 </tr><br>';
 
 $query1 = "SELECT ContentDocumentId FROM ContentDocumentLink WHERE LinkedEntityId ='" .$id ."'";
