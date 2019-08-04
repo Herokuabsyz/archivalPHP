@@ -28,7 +28,7 @@ echo "<br>Hour".date('g')."&nbsp;&nbsp;Minutes".date('i')."&nbsp;&nbsp;Seconds".
 
 if($mySforceConnection !=NULL)
 {
-echo 'Connected successfully to '.USERNAME.'<br><br>';
+echo 'Connected successfully to .. '.USERNAME.'<br><br>';
 }
 else
 {
