@@ -31,7 +31,7 @@ else
 {
 echo 'Failed to Connect to'.USERNAME;
 }
-$query = "SELECT Id, FirstName, LastName, Phone from Contact limit 5";
+$query = "SELECT Id, FirstName, LastName, Phone from Contact where ArchiveStatus__c = 'Pending' ";
 $response = $mySforceConnection->query($query);
 
 foreach ($response->records as $record)
