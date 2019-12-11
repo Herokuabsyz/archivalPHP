@@ -109,8 +109,7 @@ $records[$i]->type = 'Archival_Logs__c';
 $response1 = $mySforceConnection->delete(explode (",", $record->fields->ContentDocumentIds__c));
 foreach ($response1 as $result) {
     echo $result->id . " deleted<br/>\n";
-}
-        
+}    
     }
     catch(ServiceException $e){
         // Handle exception based on error codes and messages.
