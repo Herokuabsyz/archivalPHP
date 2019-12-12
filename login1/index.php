@@ -32,7 +32,7 @@ $query = "SELECT Id, FirstName, LastName, Phone,ContentDocumentIds__c from Conta
 $response = $mySforceConnection->query($query);
 foreach ($response->records as $rec)
 {
-	echo $rec->fields->LastName;
+	echo $rec->fields->LastName."<br>";
 }
 $records = array();
 $cvids = array();
