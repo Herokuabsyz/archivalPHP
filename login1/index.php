@@ -30,6 +30,7 @@ echo 'Failed to Connect to'.USERNAME;
 }
 $query = "SELECT Id, FirstName, LastName, Phone,ContentDocumentIds__c from Contact where ArchiveStatus__c='Pending'";
 $response = $mySforceConnection->query($query);
+	echo $response.size();
 $records = array();
 $cvids = array();
 $i = 0;
