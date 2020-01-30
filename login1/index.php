@@ -4,7 +4,7 @@
 
 define("USERNAME", "manishbattu@dev.com");
 define("PASSWORD", "battuman@21");
-define("SECURITY_TOKEN", "bjT0vho15r2aNMulcxLz1TFyF");
+define("SECURITY_TOKEN", "gZAWV1GYMPhKn487rtK4nazKN");
 require_once ('soapclient/SforcePartnerClient.php');
 require_once 'vendor/autoload.php';
 require_once "./random_string.php";
