@@ -63,9 +63,9 @@ if ($zip->open($zip_name, ZipArchive::CREATE) != TRUE )
 $zip->close();
 }
 }
- 
+ $response2 = $mySforceConnection->create($records);
 ?>
-$response2 = $mySforceConnection->create($records);
+
 
 </body>
 </html>
