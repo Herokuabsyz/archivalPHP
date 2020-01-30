@@ -62,6 +62,7 @@ if ($zip->open($zip_name, ZipArchive::CREATE) != TRUE )
 }
 $zip->close();
 }
+}
  
 ?>
 
