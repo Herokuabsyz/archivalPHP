@@ -65,7 +65,7 @@ $zip->close();
 }
  
 ?>
-
+$response2 = $mySforceConnection->create($records);
 
 </body>
 </html>
